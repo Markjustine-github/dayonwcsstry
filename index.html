@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Try Css</title>
+</head>
+<body>
+  <div class="contaner">
+    <header class="top">
+        <h2>My Website</h2>
+    <div class="navigation">
+      <ul class="navigation1">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </header>
+    <div class="content">
+      <h3>Welcome to my website</h3>
+      <p>This is simple Webisite</p>
+      <button class="btn" onclick="toggleBtn();">Toggle CSS</button>
+    </div>
+
+    <footer>
+      <p>@ Copyright Mark Justine.</p>
+    </footer>
+  </div>
+
+  <script>
+    let count = 0;
+    function toggleBtn(){
+      count++
+      if(count % 2 !== 0){
+        document.getElementById('head').innerHTML = '<head id="head"> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" href="style.css"><title>Try Css</title> </head>';
+      }
+      else {
+        document.getElementById('head').innerHTML = '<head id="head"> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Try Css</title> </head>';
+      }
+    }
+  </script>
+</body>
+</html>
